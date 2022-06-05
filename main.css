@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+body{
+    background-image: url("./images/newyear.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    line-height: 3rem;
+    color: #fff;
+}
+.title {
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.item {
+    width: 160px;
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.time-number {
+    font-size: 4.5rem !important;
+}
+
+.item p {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+/* qor effekti */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 1, 32);
+    overflow: hidden;
+}
+.fa-snowflake{
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
